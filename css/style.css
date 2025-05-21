@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #111;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #a259ff; /* matte purple accent */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a259ff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1b1b1b, #0e0e0e);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero h2 span {
+  color: #a259ff;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin-top: 100px;
+  padding: 15px 30px;
+  background-color: #a259ff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #8e44ff;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Skills & Projects */
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skills-grid span {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.skills-grid span:hover {
+  background-color: #8e44ff;
+}
+
+.project-card {
+  padding: 20px;
+  background: #1a1a1a;
+  border-left: 4px solid #a259ff;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
