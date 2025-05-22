@@ -16,6 +16,27 @@ body {
   margin: auto;
   padding: 20px;
 }
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #a259ff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
 
 /* Navigation */
 nav {
