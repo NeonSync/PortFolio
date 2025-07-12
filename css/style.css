@@ -83,40 +83,79 @@ nav {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #1b1b1b, #0e0e0e);
   text-align: center;
-  padding: 100px 20px;
+  padding: 120px 20px;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
 }
 
 .hero h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: bold;
 }
 
-.hero h2 span {
-  color: #a259ff;
+.hero .highlight {
+  background: linear-gradient(to right, #a855f7, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero p {
-  font-size: 18px;
-  opacity: 0.85;
+.hero .subheading {
+  color: #cccccc;
+  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 
 .btn {
-  margin-top: 100px;
-  padding: 15px 30px;
-  background-color: #a259ff;
+  background-color: #9333ea;
+  padding: 12px 25px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: #8e44ff;
+  background-color: #7e22ce;
+  box-shadow: 0 0 10px #9333ea88;
 }
+
+.btn-outline {
+  border: 1px solid #9333ea;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #9333ea;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn-outline:hover {
+  background-color: #9333ea;
+  color: white;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #9333ea;
+}
+
 
 /* Sections */
 .section {
@@ -374,4 +413,15 @@ footer {
   .skill-category h3 {
     font-size: 1.2rem;
   }
+}
+
+.fade-init {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
